@@ -1,5 +1,5 @@
 .gradient-text-container{
-    background-color: rgb(245, 164, 195);
+    background-color: rgb(12, 21, 82);
     padding : 20px;
     
 
@@ -13,12 +13,12 @@
 
     color : transparent;
     -weblit-text-fill-color: transparent;
-    border: 10px dashed deeppink;
+    border: 10px dashed rgb(85, 186, 204);
     text-align: left;
     padding: 10px 50px 70px 90px;
     margin: 50px 50px 50px 50px;
 
 }
 body{
-    background-color: pink;
+    background-color: rgb(12, 21, 82);
 }
