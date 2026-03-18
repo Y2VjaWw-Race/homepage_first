@@ -1,0 +1,234 @@
+body{
+    background: lightblue;
+}
+#ASignOfAffection-page{
+    background-color: lightyellow;
+}
+#Frankenstein-page{
+    background-color: rgb(13, 23, 52);
+}
+#Butter-page{
+    background-color: firebrick;
+}
+#Carmilla-page{
+    background-color: black;
+}
+#HouseOfLeaves-page{
+    background-color: rgb(96, 96, 96);
+}
+div.text{
+    text-align: center;
+}
+ol{
+    display: inline-block;
+    text-align: left;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin:10px 200px;
+}
+.smallborder{
+    margin: 0 10px;
+    border: 0 10px;
+    width: 150px;
+    height: 50px;
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:none;
+}
+
+.SOA{
+    margin: 0 500px;
+    border: 0 200px;
+    width: 100px;
+    height: 300px;
+    padding: 80px;
+    display: static;
+    top: 300px;
+    right: -1000px;
+
+}
+.SOA img{
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    background: none;
+    background: none;
+    margin: 200px 200px;
+    object-fit: contain;
+    display: block;
+    transition: 0.5s;
+}
+
+.SOA:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    background-color: none;
+}
+
+.F{
+    margin: 0 500px;
+    border: 0 200px;
+    width: 100px;
+    height: 300px;
+    padding: 80px;
+    display: static;
+    top: 1500px;
+    right: 800px;
+
+}
+.F img{
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    background: none;
+    background: none;
+    margin: 200px 200px;
+    object-fit: contain;
+    display: block;
+    transition: 0.5s;
+}
+
+.F:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    background-color: none;
+}
+
+.HW{
+    margin: 0 500px;
+    border: 0 200px;
+    width: 100px;
+    height: 300px;
+    padding: 80px;
+    display: static;
+    top: 600px;
+    right: 800px;
+
+}
+.HW img{
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    background: none;
+    background: none;
+    margin: 200px 200px;
+    object-fit: contain;
+    display: block;
+    transition: 0.5s;
+}
+
+.HW:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    background-color: none;
+}
+.HOL{
+    margin: 0 500px;
+    border: 0 200px;
+    width: 100px;
+    height: 300px;
+    padding: 80px;
+    display: static;
+    top: 300px;
+    right: -1000px;
+
+}
+.HOL img{
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    background: none;
+    background: none;
+    margin: 200px 200px;
+    object-fit: contain;
+    display: block;
+    transition: 0.5s;
+}
+
+.HOL:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    background-color: none;
+}
+
+.B{
+    margin: 0 500px;
+    border: 0 200px;
+    width: 100px;
+    height: 300px;
+    padding: 80px;
+    display: static;
+    top: 300px;
+    right: -1000px;
+
+}
+.B img{
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    background: none;
+    background: none;
+    margin: 200px 200px;
+    object-fit: contain;
+    display: block;
+    transition: 0.5s;
+}
+
+.B:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    background-color: none;
+}
+
+.C{
+    margin: 0 500px;
+    border: 0 200px;
+    width: 100px;
+    height: 300px;
+    padding: 80px;
+    display: static;
+    top: 300px;
+    right: -1000px;
+
+}
+.C img{
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    background: none;
+    background: none;
+    margin: 200px 200px;
+    object-fit: contain;
+    display: block;
+    transition: 0.5s;
+}
+
+.C:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    background-color: none;
+}
+
+.box:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    background-color: none;
+}
+
+.border{
+    margin: 0 10px;
+    border: 0 10px;
+    width: 150px;
+    height: 80px;
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:none;
+}
