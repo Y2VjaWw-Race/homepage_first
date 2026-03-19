@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(163, 207, 235);
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+.image-half{
+    flex:1;
+}
+.image-half img{
+    width: 100%;
+    height:auto;
+    display: block;
+}
+.text-half{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+.new-line {
+  display: block; /* Forces the span to start on a new line and take full width */
+}
