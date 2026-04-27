@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    transition: background .5s;
+    background-color: rgb(131, 131, 131);
+    p,li,h1{
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+}
+
+.stickyBox-img {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    max-width: 450px;
+    max-height: auto;
+    margin-top: 15px;
+    margin-left: 5px;
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+    /* border: 1px solid black; */
+    object-fit: contain;
+    cursor: zoom-in;
+}
+
+.stickyBox-img.enlarged{
+    position: fixed;
+    top:0;
+    left:0;
+    /* transform: translate(-18%, -50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    /* max-width: 1200px; */
+    /* min-height:auto; */
+    height:100vh;
+    z-index: 9999;
+    border: none;
+    /* box-shadow: 0 0 50px rgba(0,0,0,0.5); */
+    cursor:zoom-out;
+    margin:0;
+    padding:0; 
+}
+
+.stickyBox-img img {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.stickyBox-img.enlarged img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height:90vh;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+.stickyBox:has(.enlarged) {
+    z-index: 3000 !important;
+}
+
+.stickyBox{
+    display: grid;
+    grid-template-rows: 1fr; 
+    position: sticky;
+    top: 0;
+    padding: 3px; 
+    border: 1px solid black;
+    background-color: rgba(131, 131, 131, .5);
+    transition: all 0.5s ease-in-out;
+    /* overflow: hidden; */
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.stickyBox-hello{
+    display: grid;
+    grid-template-rows: 1fr; 
+    position: sticky;
+    top: 0;
+    padding: 3px; 
+    border: 1px solid black;
+    background-color: rgba(131, 131, 131, .5);
+    transition: all 0.5s ease-in-out;
+    /* overflow: hidden; */
+    cursor: pointer;
+    z-index: 4000;
+}
+
+.stickyBox-hello.minimized {
+    grid-template-rows: 0fr;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 25px;
+}
+
+.stickyBox-hello.minimized h1{
+    padding: 0;
+    font-size: 0;
+    opacity: 0;
+    /* display:none; */
+}
+
+
+.container .stickyBox {
+    z-index: 1000;
+}
+
+.stickyBox h1 a{
+    margin: 0;
+    padding: 25px;
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.stickyBox.minimized {
+    grid-template-rows: 0fr;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 25px;
+}
+
+.stickyBox-img.minimized{
+    max-height: 150px;
+    height: 150px;
+    min-width: 15px;
+    max-width: 15px;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.stickyBox-img.minimized img {
+    /* display:none;  */
+    opacity:0;   
+    width: 100%;
+    height:auto;
+
+}
+
+.stickyBox.minimized h1{
+    padding: 0;
+    font-size: 0;
+    opacity: 0;
+    /* display:none; */
+}
+
+.content-wrapper {
+    min-height: 0;
+}
+
+
+p,li,h1{
+    justify-content: center;
+    color: rgb(16, 16, 37);
+    }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* max-width:1100px; */
+    width: 95%;
+    margin: 10px auto;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+}
+
+.textBox{
+    width: 650px;
+    height: 350px;
+    gap: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    /* border: 2px solid blue; */
+    text-align: left ;
+}
+
+.stickyBox.minimized .textBox{
+    max-height:150px;
+    height:150px;
+    min-width: 15px;
+    max-width: 15px;
+    border: 1px solid black;
+    margin: 0;
+    padding:0;
+}
+.textBox.minimized p{
+    opacity: 0;
+}
+
+.littleguy{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100px;
+    height: 50px;
+    margin: 10px 0;
+    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+    overflow:hidden;
+    background-color: blue;
+    animation: move 8s infinite ease-in-out;
+}
+
+.animation-wrapper {
+  width: 100%;
+  overflow: hidden; /* Clips anything moving outside this specific div */
+  position: relative;
+}
+
+.tempSpace{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 25px;
+    height: 350px;
+    margin: 10px 0;
+    /* background-color: yellowgreen; */
+}
+
+
+@keyframes move{
+    0%{
+    left:-200vh;
+
+    }
+    100%{
+    left:200vh;
+    }
+
+}
+@keyframes spin{
+    0%{
+        rotate: 0deg;
+        scale:1;
+    }
+    50%{
+        scale:.5;
+    }
+    100%{
+        rotate: 720deg;
+        scale: 1;
+    }
+}
+
+
+/* tablet screen size */
+@media screen and (max-width:1000px){
+    body {
+        background-color: rgb(95, 95, 95);
+    }
+    .container{
+        flex-wrap:wrap;
+    }
+    .left{
+        width:100%;
+    }
+    .right, .center{
+        width:calc(50% - 5px);
+    }
+    p,li,h1{
+        color: rgb(198, 215, 220);
+    }
+ 
+}
+
+/* phone screen size */
+@media screen and (max-width:800px){
+    body{
+        background: rgb(28, 28, 28);
+        font-size: 150%;
+    }
+    p,li,h1{
+        color: azure;
+    }
+    .center, .right{
+        width:100%;
+    }
+    .stickyBox-img{
+        width: 75%;
+        height: auto;
+    }
+    .textBox{
+        height: auto;
+    }
+
+}
