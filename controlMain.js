@@ -6,7 +6,7 @@ function changeBgColor(){
     const currentIndex = colors.indexOf(currentColor);
     const nextColor = colors[(currentIndex + 1) % colors.length];
 
-
+    
 
     body.style.backgroundColor = nextColor;
     const boxes = document.querySelectorAll('.box');
