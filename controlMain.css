@@ -1,0 +1,54 @@
+body{
+    background-color:lightblue;
+    transition: background-color 0.5s ease;
+}
+.container{
+    height:150px;
+    width: 1650px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.box{
+    height: 125px;
+    width: 125px;
+    /* background-color: seashell; */
+    border: 1px solid;
+    background-color: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+.box img{
+    justify-content: center;
+    width: 130px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    opacity:0;
+}
+.box:hover{
+    transition: .5s;
+    transform: scale(1.5);
+    rotate: 360deg;
+    opacity:1;
+}
+.box img:hover{
+    transition: .5s;
+    transform: scale(1.5);
+    rotate: 360deg;
+    opacity:1;
+}
+.center{
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+button{
+    transition: .5s ease;
+}
+
+button:hover{
+    background-color: teal;
+}
